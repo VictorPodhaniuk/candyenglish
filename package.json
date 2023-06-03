@@ -1,11 +1,11 @@
 {
-  "name": "parcel-team-project-mimino",
+  "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://DimaShabatyn.github.io/parcel-team-project-mimino",
+  "homepage": "https://github.com/VictorPodhaniuk/goit-js-hw-08/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-team-project-mimino/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
@@ -18,12 +18,16 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "@vimeo/player": "^2.18.0",
+    "lodash": "^4.17.21",
+    "lodash.throttle": "^4.1.1",
+    "modern-normalize": "^1.1.0",
+    "nodemon": "^2.0.20",
+    "simplelightbox": "^2.12.1",
+    "vimeo": "^2.1.1"
   },
   "devDependencies": {
-    "@parcel/packager-raw-url": "^2.6.0",
     "@parcel/transformer-sass": "^2.6.0",
-    "@parcel/transformer-webmanifest": "^2.6.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"

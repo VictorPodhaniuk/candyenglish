@@ -1,37 +1,28 @@
-<header class="page-header">
-    <div class="container header__container">
-        <a href="./" class="logo"><img src="./images/icons/logo.png" alt="Логотип Icecream" width="200" height="50" loading="lazy"/></a>
-        
-            <div class="menu__wraper">
-                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu__container" data-menu-button>
-                    <svg class="menu__icons" aria-label="Переключатель мобильного меню" width="20" height="15">
-                        <use class="icon-close" href="./images/icons/sprite.svg#icon-close"></use>
-                        <use class="icon-burger" href="./images/icons/sprite.svg#icon-Burger"></use>
-                    </svg></button>
-
-            <div class="menu__container" id="menu__container" data-menu>
-                <button type="submit" class="btn__buy menu__buy" data-modal-open-two>
-                    Buy now
-                    <svg class="menu-buy__icon" width="6" height="8">
-                        <use href="./images/icons/sprite.svg#menu-vector-arrow"></use>
-                    </svg>
-                </button>
-            <nav class="navigation">
-                <ul class="list menu">
-                    <li class="menu__item"><a href="#" class="link current menu__link">Home</a></li>
-                    <li class="menu__item"><a href="#about" class="link menu__link">About us</a></li>
-                    <li class="menu__item"><a href="#how" class="link menu__link">How it’s made?</a></li>
-                    <li class="menu__item"><a href="#products" class="link menu__link">Our products</a></li>
-                    <li class="menu__item"><a href="#contacts" class="link menu__link">Contact</a></li>
-                </ul>
-            </nav>
-    </div> 
-    <button type="submit" data-modal-open class="btn__buy header__buy">
-        Buy now
-        <svg class="header-buy__icon" width="6" height="8">
-            <use href="./images/icons/sprite.svg#menu-vector-arrow"></use>
+<nav class="nav">
+  <a href="../src/index.html" class="logo header__logo animate__animated animate__bounce wow"><span>MIMIHO</span></a>
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a class="nav__link" href="../src/restaurant.html">Ресторан</a>
+      <a class="nav__tel nav__wrap" href="tel:+380955559533">
+        <svg class="nav__icon" width="24" height="24">
+          <use href="./images/sprite.svg#phone"></use>
         </svg>
-    </button>
-    </div>
-    </div>
-</header>
+        <span class="nav__hidden">095 555 95 33</span>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="../src/hotel.html">Готель</a>
+      <div class="nav__wrap">
+        <a class="nav__tel" href="tel:+380668491089">
+          <svg class="nav__icon" width="24" height="24">
+            <use href="./images/sprite.svg#phone"></use>
+          </svg>
+          <span class="nav__hidden">066 849 10 89</span>
+        </a>
+        <a class="nav__tel nav__hidden" href="tel:+380672758540">
+          <span>067 275 85 40</span>
+        </a>
+      </div>
+    </li>
+  </ul>
+</nav>

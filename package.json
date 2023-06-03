@@ -1,12 +1,11 @@
 {
-  "name": "parcel-project-template",
-  "version": "1.0.0",
+  "name": "parcel-team-project-mimino",
+  "version": "2.0.0",
   "description": "",
-  "main": "index.js",
-  "homepage": "https://VictorPodhaniuk.github.io/candyenglish/",
+  "homepage": "https://DimaShabatyn.github.io/parcel-team-project-mimino",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /candyenglish/"
+    "build": "parcel build src/*.html --public-url /parcel-team-project-mimino/"
   },
   "repository": {
     "type": "git",
@@ -18,10 +17,16 @@
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
   "devDependencies": {
-    "gh-pages": "^3.1.0",
-    "parcel-bundler": "^1.12.4",
-    "posthtml-include": "^1.4.3",
-    "sass": "^1.26.9"
-  }
+    "@parcel/packager-raw-url": "^2.6.0",
+    "@parcel/transformer-sass": "^2.6.0",
+    "@parcel/transformer-webmanifest": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }

@@ -1,0 +1,251 @@
+.adult-third {
+  background-color: #f0ecd6;
+  text-align: right;
+  position: relative;
+
+  .container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+      padding-top: 66px;
+      padding-bottom: 112px;
+    }
+  }
+}
+
+.adult-third__subtitle {
+  margin-bottom: 8px;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #b4b4b4;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+  }
+}
+.adult-third__logo {
+  font-size: 40px;
+  letter-spacing: 0.3em;
+
+  color: #494848;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 64px;
+  }
+
+  span {
+    letter-spacing: 0;
+  }
+}
+
+.adult-third__title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  margin-top: 32px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 30px;
+    margin-bottom: 16px;
+    margin-top: 62px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    margin-bottom: 24px;
+    margin-top: 72px;
+  }
+}
+
+.adult-third__wrap {
+  position: relative;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 45px;
+    flex-direction: row-reverse;
+    height: 426px;
+    margin-bottom: 48px;
+    padding-right: 16px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 510px;
+    padding-right: 62px;
+  }
+}
+
+.adult-third__content {
+  margin-bottom: 32px;
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 169px;
+  }
+}
+
+.adult-third__inner {
+  text-align: left;
+}
+
+.adult-third__text {
+  font-weight: 600;
+  font-size: 12px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    width: 400px;
+    line-height: 20px;
+    color: #7a7a7a;
+    width: 387px;
+  }
+
+  line-height: 15px;
+  letter-spacing: 0.02em;
+
+  color: #5f5f5f;
+  text-align: left;
+  width: 242px;
+}
+
+.adult-third__img {
+  width: 244px;
+  // height: 322px;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+    position: absolute;
+    left: 64px;
+    right: auto;
+    top: -96px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 460px;
+    left: 95px;
+  }
+
+  border-radius: 2px;
+  background-color: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.adult-third__details {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.adult-third__swiper-container {
+  position: relative;
+
+  height: 194px;
+  @media screen and (min-width: $mobile) {
+    width: auto;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 428px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 548px;
+    height: 254px;
+  }
+}
+
+.adult-third__swiper {
+  position: absolute;
+  @media screen and (max-width: 1023px) {
+    right: -15px;
+  }
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.adult-third__swiper-wrapper {
+  width: 284px;
+  @media screen and (min-width: $tablet) {
+    width: 428px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 548px;
+  }
+}
+
+.adult-third__swiper-slide {
+  max-width: 194px;
+  height: 194px;
+  @media screen and (min-width: $desktop) {
+    max-width: 254px;
+    height: 254px;
+  }
+
+  background-color: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.adult-third__buttons {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  @media screen and (max-width: 1023px) {
+    margin-top: 72px;
+  }
+}
+
+.adult-third__swiper-arrows {
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  @media screen and (min-width: $tablet) {
+    left: 0;
+    bottom: -64px;
+  }
+  display: flex;
+  gap: 33px;
+
+  @media screen and (min-width: $desktop) {
+    bottom: -70px;
+  }
+}
+
+.adult-third__button-prev,
+.adult-third__button-next {
+  position: static;
+  margin-top: 0;
+  width: 32px;
+  height: 32px;
+  .adult-third__swiper__icon {
+    color: #000;
+    min-width: 32px;
+    height: 32px;
+    display: block;
+
+    @media screen and (min-width: $desktop) {
+      min-width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.adult-third__swiper-container [class^='swiper-button-']::after {
+  content: '';
+}

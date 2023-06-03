@@ -1,92 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>Candy English</title>
-    <meta name="description" content="Ice cream made with passion" />
-
-    <!-- COMMON TAGS -->
-    <!-- Schema.org for Google -->
-    <meta itemprop="name" content="Homemade ice cream | IceCream" />
-    <meta itemprop="description" content="Ice cream made with passion" />
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Homemade ice cream | IceCream" />
-    <meta name="twitter:description" content="Ice cream made with passion" />
-    <meta
-      name="twitter:image:src"
-      content="https://raw.githubusercontent.com/mityaua/final-project-7/develop/src/images/desktop/banner-1200.jpg"
-    />
-    <!-- Open Graph general (Facebook, Pinterest) -->
-    <meta name="og:title" content="Homemade ice cream | IceCream" />
-    <meta name="og:description" content="Ice cream made with passion" />
-    <meta
-      name="og:image"
-      content="https://raw.githubusercontent.com/mityaua/final-project-7/develop/src/images/desktop/banner-1200.jpg"
-    />
-    <meta name="og:url" content="https://mityaua.github.io/final-project-7/" />
-    <meta name="og:site_name" content="IceCream" />
-    <meta name="og:type" content="website" />
-
+    <title>MIMIHO</title>
     <link
-      rel="shortcut icon"
-      href="../src/images/icons/favicon.svg"
-      type="image/x-icon"
-    />
-
-    <link
-      rel="preload"
-      href="./fonts/DMSans-Regular.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
     />
     <link
-      rel="preload"
-      href="./fonts/DMSans-Medium.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
     />
     <link
-      rel="preload"
-      href="./fonts/DMSans-Bold.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
     />
-    <link
-      rel="preload"
-      href="./fonts/TitanOne-Regular.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
+    <link rel="manifest" href="/src/site.webmanifest" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- animate -->
+    <include src="./animate.html"></include>
+    <!-- link slider -->
+    <include src="../src/partials/slider/link-slider.html"></include>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <!-- header -->
+    <section class="header">
+      <section class="header container">
+        <div class="header__wrap">
+          <include src="./partials/header.html"></include>
+          <div class="header__social">
+            <include src="./partials/social.html"></include>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- main -->
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="hero__container hero__main container">
+          <include src="./partials/hero-home.html"></include>
+          <div class="hero__social">
+            <include src="./partials/social.html"></include>
+          </div>
+        </div>
+      </section>
+      <!-- restaurant-about -->
+      <include src="./partials/about-restaurant.html"></include>
 
-    <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/features.html"></include>
-    <include src="./partials/banner.html"></include>
-    <include src="./partials/slider.html"></include>
-    <include src="./partials/location.html"></include>
-    <include src="./partials/page-footer.html"></include>
-    <include src="./partials/modal.html"></include>
-    <include src="./partials/button-top.html"></include>
+      <!-- restaurant-details -->
+      <include src="./partials/details-restaurant.html"></include>
 
-    <!-- Скрипты для меню и модалки -->
+      <!-- hotel-about -->
+      <include src="./partials/about-hotel.html"></include>
 
-    <script src="./js/topbutton.js"></script>
-    <script src="./js/menu.js"></script>
+      <!-- hotel-details -->
+      <include src="./partials/details-hotel.html"></include>
+
+      <!-- contacts -->
+      <include src="./partials/contacts-home.html"></include>
+    </main>
+
+    <!--  footer -->
+    <section class="footer animate__animated animate__fadeInDown wow">
+      <include src="./partials/footer.html"></include>
+    </section>
+
+    <!-- modal window -->
+    <div data-modal>
+      <include src="./partials/modal-table.html"></include>
+    </div>
+    <div data-modal>
+      <include src="./partials/modal-room.html"></include>
+    </div>
+    <div data-modal>
+      <include src="./partials/pages/modal/modal-room-lux-price.html"></include>
+    </div>
+
+    <!-- scripts -->
     <script src="./js/modal.js"></script>
-    <script src="./js/modal-send.js"></script>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
+    <include src="../src/partials/slider/script-slider.html"></include>
+    <script src="./js/slider-hero.js"></script>
+    <script src="./js/slider-third.js"></script>
+    <script src="./js/slider-two.js"></script>
+    <script src="./js/wow.js"></script>
+    <script>new WOW().init();</script>
   </body>
 </html>
